@@ -40,4 +40,4 @@ Using Visual Studio Code
    }
    ```
 
-It may force VSCode using the typescript vesion in node_modules
+It may force VSCode using the typescript version in node_modules
