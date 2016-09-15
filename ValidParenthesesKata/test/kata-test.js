@@ -6,6 +6,6 @@ describe('kata test', function () {
         chai_1.expect(true).to.eql(true);
     });
     it('should return true when input is "()"', function () {
-        chai_1.expect(kata_1.kata()).to.be.true;
+        chai_1.expect(kata_1.kata("()")).to.be.true;
     });
 });
