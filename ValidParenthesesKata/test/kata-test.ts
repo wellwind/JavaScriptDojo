@@ -9,4 +9,9 @@ describe('kata test', () => {
     it('should return true when input is "()"', () => {
         expect(kata("()")).to.be.true;
     });
+
+    it('should return false when input is "())"', () => {
+        expect(kata("())")).to.be.false;
+    });
+
 });
