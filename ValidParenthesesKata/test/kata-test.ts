@@ -22,7 +22,11 @@ describe('kata test', () => {
         expect(kata(")(")).to.be.false;
     });
 
-    it('should return false when input is "(())((()())())"', () =>{
+    it('should return false when input is "(())((()())())"', () => {
         expect(kata("(())((()())())")).to.be.true;
+    });
+
+    it('should return false when input is ")"', () => {
+        expect(kata(")")).to.be.false;
     });
 });
