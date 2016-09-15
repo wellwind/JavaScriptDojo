@@ -17,4 +17,8 @@ describe('kata test', () => {
     it('should return false when input is ")(()))"', () => {
         expect(kata(")(()))")).to.be.false;
     });
+
+    it('should return false when input is ")(" because of starts with ")"', () => {
+        expect(kata(")(")).to.be.false;
+    });
 });
