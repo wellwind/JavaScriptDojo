@@ -17,4 +17,7 @@ describe('kata test', function () {
     it('should return false when input is ")(" because of starts with ")"', function () {
         chai_1.expect(kata_1.kata(")(")).to.be.false;
     });
+    it('should return false when input is "(())((()())())"', function () {
+        chai_1.expect(kata_1.kata("(())((()())())")).to.be.true;
+    });
 });
