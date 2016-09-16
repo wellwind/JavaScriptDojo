@@ -1,3 +1,3 @@
-export function kata() : Boolean {
-    return false;
-} 
+export function kata(numbers: string): number {
+    return 0;
+}

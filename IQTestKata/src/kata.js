@@ -1,5 +1,5 @@
 "use strict";
-function kata() {
-    return false;
+function kata(numbers) {
+    return 0;
 }
 exports.kata = kata;
