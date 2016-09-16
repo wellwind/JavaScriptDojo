@@ -1,0 +1,24 @@
+{
+  "name": "kata-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "pretest": "tsc",
+    "test": "mocha"
+  },
+  "author": "Wellwind",
+  "license": "",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "typescript": "^2.1.0-dev.20160915"
+  },
+  "dependencies": {
+    "@types/chai": "^3.4.32",
+    "@types/mocha": "^2.2.31"
+  }
+}
