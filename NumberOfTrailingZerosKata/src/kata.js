@@ -1,5 +1,14 @@
 "use strict";
 function kata(n) {
-    return 0;
+    var count = 0;
+    var tmp = 1;
+    for (var i = 1; i <= n; ++i) {
+        tmp *= i;
+        if (tmp % 10 == 0) {
+            tmp /= 10;
+            ++count;
+        }
+    }
+    return count;
 }
 exports.kata = kata;
