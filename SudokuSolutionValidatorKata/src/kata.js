@@ -1,6 +1,36 @@
 "use strict";
 function kata(board) {
-    throw Error();
+    // check every rows
+    for (var i = 0; i < 9; ++i) {
+        if (!arrayValidate(board[i])) {
+            return false;
+        }
+    }
+    // check every col
+    for (var i = 0; i < 9; ++i) {
+        var newArr = [];
+        for (var j = 0; j < 9; ++j) {
+            newArr.push(board[j][i]);
+        }
+        if (!arrayValidate(newArr)) {
+            return false;
+        }
+    }
+    // check every 3x3 matrix
+    for (var i = 0; i < 9; i += 3) {
+        for (var j = 0; j < 9; j += 3) {
+            var newArr = [];
+            for (var m = i; m < i + 3; ++m) {
+                for (var n = j; n < j + 3; ++n) {
+                    newArr.push(board[m][n]);
+                }
+            }
+            if (!arrayValidate(newArr)) {
+                return false;
+            }
+        }
+    }
+    return true;
 }
 exports.kata = kata;
 function arrayValidate(array) {
