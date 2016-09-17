@@ -22,4 +22,9 @@ describe('kata test', () => {
     it('should resurn "10000" when inputs are "9999" & "1"', () =>{
         expect(kata("9999", "1")).to.eql("10000");
     });
+
+    
+    it('should resurn "8670" when inputs are "00103" & "08567"', () =>{
+        expect(kata("00103", "08567")).to.eql("8670");
+    });
 });

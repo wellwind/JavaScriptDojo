@@ -18,4 +18,7 @@ describe('kata test', function () {
     it('should resurn "10000" when inputs are "9999" & "1"', function () {
         chai_1.expect(kata_1.kata("9999", "1")).to.eql("10000");
     });
+    it('should resurn "8670" when inputs are "00103" & "08567"', function () {
+        chai_1.expect(kata_1.kata("00103", "08567")).to.eql("8670");
+    });
 });

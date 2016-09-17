@@ -22,6 +22,16 @@ function kata(val1, val2) {
     if (next === 1) {
         result = "1" + result;
     }
-    return result;
+    var realDigitIndex = 0;
+    for (var i = 0; i < result.length; ++i) {
+        if (result[i] === "0") {
+            continue;
+        }
+        else {
+            realDigitIndex = i;
+            break;
+        }
+    }
+    return result.substr(realDigitIndex);
 }
 exports.kata = kata;
