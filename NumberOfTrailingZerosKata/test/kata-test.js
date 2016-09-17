@@ -8,4 +8,7 @@ describe('kata test', function () {
     it('should return 2 when n is 12', function () {
         chai_1.expect(kata_1.kata(12)).to.eql(2);
     });
+    it('should return 7 when n is 20', function () {
+        chai_1.expect(kata_1.kata(30)).to.eql(7);
+    });
 });

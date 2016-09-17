@@ -8,6 +8,10 @@ function kata(n) {
             tmp /= 10;
             ++count;
         }
+        else {
+            // keep only last digit
+            tmp = tmp % 10;
+        }
     }
     return count;
 }
