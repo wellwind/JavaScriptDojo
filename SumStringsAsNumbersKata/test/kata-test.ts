@@ -18,4 +18,8 @@ describe('kata test', () => {
         expect(kata("712569312664357328695151392", "8100824045303269669937")).
             to.eql("712577413488402631964821329", "big integer");
     });
+
+    it('should resurn "10000" when inputs are "9999" & "1"', () =>{
+        expect(kata("9999", "1")).to.eql("10000");
+    });
 });
