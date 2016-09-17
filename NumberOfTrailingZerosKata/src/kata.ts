@@ -1,15 +1,9 @@
 export function kata(n: number): number {
-    let count = 0;
-    let tmp = 1;
-    for (let i = 1; i <= n; ++i) {
-        tmp *= i;
-        if (tmp % 10 == 0) {
-            tmp /= 10;
-            ++count;
-        } else {
-            // keep only last digit
-            tmp = tmp % 10;
-        }
+    let base = 5;
+    let result = 0;
+    while(base < n){
+        result += Math.floor(n / base);
+        base *= 5;
     }
-    return count;
+    return result;
 }

@@ -8,9 +8,13 @@ describe('kata test', () => {
 
     it('should return 2 when n is 12', () => {
         expect(kata(12)).to.eql(2);
-    })
+    });
 
     it('should return 7 when n is 20', () => {
         expect(kata(30)).to.eql(7);
+    });
+
+    it('should return 24 when n is 100', () => {
+        expect(kata(100)).to.eql(24);
     })
 });

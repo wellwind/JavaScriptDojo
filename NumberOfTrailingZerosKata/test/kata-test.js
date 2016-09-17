@@ -11,4 +11,7 @@ describe('kata test', function () {
     it('should return 7 when n is 20', function () {
         chai_1.expect(kata_1.kata(30)).to.eql(7);
     });
+    it('should return 24 when n is 100', function () {
+        chai_1.expect(kata_1.kata(100)).to.eql(24);
+    });
 });
