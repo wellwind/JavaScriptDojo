@@ -10,6 +10,11 @@ describe('kata test', () => {
         expect(arrayValidate([1, 2, 3, 4, 5, 6, 7, 8, 9])).to.be.true;
     });
     
+    it('should return false when input has only [1~9]', () => {
+        expect(arrayValidate([1, 2, 2, 4, 5, 6, 7, 8, 9])).to.be.false;
+        expect(arrayValidate([0, 1, 2, 3, 4, 5, 6, 7, 8])).to.be.false;
+    });
+
     // it('should return true for test1', () => {
     //     var result = 
     //         kata([[5, 3, 4, 6, 7, 8, 9, 1, 2], 
